@@ -47,6 +47,9 @@ CALL prepare_data();
 
 [参考文章](https://www.zhihu.com/question/36996520)
 
+## 增加、删除字段
 
+```mysql
+ALTER TABLE user ADD COLUMN `sex` varchar(255) NOT NULL DEFAULT '' AFTER `username`;
+```mysql
 
- ALTER TABLE tbl_cloud_variable DROP INDEX idx_is_deleted_work_id_type;
