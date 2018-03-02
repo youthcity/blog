@@ -51,5 +51,5 @@ CALL prepare_data();
 
 ```mysql
 ALTER TABLE user ADD COLUMN `sex` varchar(255) NOT NULL DEFAULT '' AFTER `username`;
-```mysql
+```
 
