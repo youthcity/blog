@@ -42,3 +42,11 @@ DELIMITER ;
 # 然后调用程序
 CALL prepare_data();
 ```
+
+## mysql索引最左匹配原则的理解
+
+[参考文章](https://www.zhihu.com/question/36996520)
+
+
+
+ ALTER TABLE tbl_cloud_variable DROP INDEX idx_is_deleted_work_id_type;
