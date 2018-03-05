@@ -53,3 +53,10 @@ CALL prepare_data();
 ALTER TABLE user ADD COLUMN `sex` varchar(255) NOT NULL DEFAULT '' AFTER `username`;
 ```
 
+## 事务
+
+## TRUNCATE TABLE 命令用于删除现有数据表中的所有数据
+
+```mysql
+TRUNCATE TABLE `tbl_user`; # 清空tbl_user内的数据
+```
