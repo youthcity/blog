@@ -73,4 +73,28 @@ TRUNCATE TABLE `tbl_user`; # 清空tbl_user内的数据
 
 ### insert ignore
 
-如果表中如果已经存在相同的记录，则忽略当前新数据； 
+如果表中如果已经存在相同的记录，则忽略当前新数据；
+
+```mysql
+# 创建表结构
+CREATE TABLE tbl_test (
+id INT NOT NULL PRIMARY KEY,
+username VARCHAR ( 50 ),
+age INT 
+);
+
+# 使用 insert into 添加数据，执行完后观察表内容
+INSERT INTO tbl_test ( id, username, age )
+VALUES
+	( 1, 'bb', 13 );
+ 
+ # 使用 insert ingnore 添加数据
+INSERT IGNORE INTO tbl_test ( id, username, age )
+VALUES
+	( 1, 'aa', 13 );
+
+# 使用 replace into 添加数据
+REPLACE INTO tbl_test ( id, username, age )
+VALUES
+	( 1, "aa", 12 );
+```
