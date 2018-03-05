@@ -60,3 +60,17 @@ ALTER TABLE user ADD COLUMN `sex` varchar(255) NOT NULL DEFAULT '' AFTER `userna
 ```mysql
 TRUNCATE TABLE `tbl_user`; # 清空tbl_user内的数据
 ```
+
+## 插入数据
+
+### insert into
+
+表示插入数据，数据库会检查主键，如果出现重复会报错； 
+
+### replace into
+
+表示插入替换数据，需求表中有PrimaryKey，或者unique索引，如果数据库已经存在数据，则用新数据替换，如果没有数据效果则和insert into一样； 
+
+### insert ignore
+
+如果表中如果已经存在相同的记录，则忽略当前新数据； 
