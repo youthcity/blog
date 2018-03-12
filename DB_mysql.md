@@ -98,3 +98,9 @@ REPLACE INTO tbl_test ( id, username, age )
 VALUES
 	( 1, "aa", 12 );
 ```
+
+## 获取字符串的长度
+
+```mysql
+SELECT CHARACTER_LENGTH (`content`)  FROM `tbl_article` ORDER BY CHARACTER_LENGTH (`content`)  DESC
+```
