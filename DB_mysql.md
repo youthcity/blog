@@ -104,3 +104,18 @@ VALUES
 ```mysql
 SELECT CHARACTER_LENGTH (`content`)  FROM `tbl_article` ORDER BY CHARACTER_LENGTH (`content`)  DESC
 ```
+
+## 慢查询
+
+查看/设置“慢查询”的时间定义
+
+```mysql
+SHOW VARIABLES LIKE "long%"
+
+// 例子
+Variable_name	Value
+long_query_time	1.000000
+
+// 该数据库的慢查询时间定义为 1 秒
+```
+
